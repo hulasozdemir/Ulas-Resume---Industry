@@ -1,0 +1,252 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% % Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+%   \vspace{-2pt}
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+    % \vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Hakan Ula\c{s} \"{O}zdemir} \\ \vspace{1pt}
+    \small +1-778-321-9874 $|$ \href{mailto:hulasozdemir@gmail.com}{hulasozdemir@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/ulas-ozdemir}{linkedin.com/in/ulas-ozdemir} $|$
+    \href{https://github.com/hulasozdemir}{github.com/hulasozdemir}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ph.D. in Physics}{2016 -- Sep 2022}
+      {Simon Fraser University}{Burnaby, BC}
+      \resumeItemListStart
+        \resumeItem{Thesis Title: Phenomenology of unconventional superconductors}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Master of Science in Physics}{2014 -- 2016}
+      {Izmir Institute of Technology}{Urla, \.{I}zmir}
+       \resumeItemListStart
+        \resumeItem{Thesis Title: Electronic, magnetic and optical properties of graphene nanoribbons}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Bachelor of Science in Physics}{2010 -- 2014}
+      {Middle East Technical University}{\c{C}ankaya, Ankara}
+             \resumeItemListStart
+        \resumeItem{Honors Thesis Title: Theoretical investigation of structural and electronic properties of surfaces}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+ \resumeSubheading
+      {Research Assistant}{2016 -- Aug 2022}
+      {Simon Fraser University}{Burnaby, BC}
+      \resumeItemListStart
+      \resumeItem{Numerically studied electromagnetic properties of unconventional dirty superconductors}
+        \resumeItem{Contributed to a codebase written in Apple Swift}
+        \resumeItem{Designed and implemented a parallelized Python package that utilizes GPGPUs}
+      \resumeItemListEnd
+
+    
+    \resumeSubheading
+      {Intern Data Scientist}{Jan 2020 -- Dec 2020}
+      {Applied Quantitative Methods (AQM)}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Worked on a predictive model with a team of data scientists for one of Canada's biggest private \\career colleges}
+      \resumeItemListEnd
+
+      
+      \resumeSubheading
+      {Teaching Assistant}{2016 -- 2020}
+      {Simon Fraser University}{Burnaby, BC}
+      \resumeItemListStart
+        \resumeItem{Supervised several lower- and upper-division undergraduate courses}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Research Assistant}{2014 -- 2016}
+      {Izmir Institute of Technology}{Urla, \.{I}zmir}
+      \resumeItemListStart
+        \resumeItem{Implemented a linear algebra package to investigate transport properties of graphene nanostructures}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Intern Data Scientist}{Jan 2020 -- Dec 2020}
+%       {Applied Quantitative Methods (AQM)}{Vancouver, BC}
+%       \resumeItemListStart
+%         \resumeItem{Collaborated with a team of data scientists to design and implement a predictive model for one of Canada's largest private career colleges}
+%       \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+     \textbf{Programming}{: Python, Apple Swift, Julia, Mathematica, Matlab, SQL} \\
+     \vspace{5pt}
+     \textbf{Frameworks}{: Scikit-learn, Pandas, Keras, NumPy, CuPy, SciPy, Cython, CoreML, SwiftUI} \\
+     \vspace{5pt}
+     \textbf{Visualization}{: Matplotlib, Seaborn, Tableau, Blender3D, Adobe Illustrator} \\
+     \vspace{5pt}
+     \textbf{Developer Tools}{: Git, Docker, Google Colab, Kubernetes} \\
+     \vspace{5pt}
+     \textbf{Languages}{: Turkish (Native), English (Full Professional Proficiency)}
+    }
+ \end{itemize}
+
+ \section{Selected Publications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+      ``Effect of realistic out-of-plane dopant potentials on the superfluid density of overdoped cuprates'', Özdemir et al., \href{https://arxiv.org/abs/2206.01348}{arXiv:2206.01348} - Accepted for publication in Phys. Rev. B
+    }
+    \item{
+       ``Low energy phenomenology of the overdoped cuprates: Viability of the Landau-BCS paradigm'', N. R. Lee-Hone, H. U. Özdemir, V. Mishra, D. M. Broun, and P. J. Hirschfeld, \href{https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.013228}{Phys. Rev. Research 2, 013228 (2020)
+    }}
+    \item{
+       ``Magnetic phases of graphene nanoribbons under potential fluctuations'', H. U. Özdemir, A. Altıntaş, and A. D. Güçlü, \href{https://journals.aps.org/prb/abstract/10.1103/PhysRevB.93.014415}{Phys. Rev. B 93, 014415 (2016)}
+    }
+    
+ \end{itemize}
+ 
+ 
+%  \section{Achievements}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \item{
+%      \textbf{Graduate Fellowship Award} \\
+%      \textbf{Published} \\
+%      \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Google Colab} \\
+%      \textbf{Languages}{: Turkish (Native), English (Full Professional Proficiency)}
+%     } \\
+%  \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
